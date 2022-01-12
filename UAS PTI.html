@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>UAS PENGANTAR TEKNIK INFORMATIKA</title>
+        <style> 
+            th,td{
+                padding: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+        }</style>
+    </head>
+    <body>
+        <div align="center" style="margin-top: 200px;">
+            <h1 style=" text-align: center; font-family: Arial, Helvetica, sans-serif;">Kalkulator Clientside</h1>
+        <form name="calculator" action="#">
+            <table style="border: 20%; padding: 20px; border-radius: 10px; background-color: lime;">
+                <tr>
+                    <td>Masukan Angka 1</td>
+                    <td>:</td>
+                    <td><input type="text" name="angka1"></td>
+                </tr>
+                <tr>
+                    <td>Masukan Angka 2</td>
+                    <td>:</td>
+                    <td><input type="text" name="angka2"></td>
+                </tr>
+                <tr>
+                    <td>Operator</td>
+                    <td>:</td>
+                    <td>
+                        <select name="option">
+                            <option value="tambah">+</option>
+                            <option value="kurang">-</option>
+                            <option value="bagi">:</option>
+                            <option value="kali">x</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hasil</td>
+                    <td>:</td>
+                    <td><input type="text" name="Submit" disabled="true" /></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="button" value="Submit" onClick="hitung()" style="width: 100%;"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>    
+    </body>
+    <script language="JavaScript" type="text/javascript">
+
+        <!--
+        
+        function hitung(){
+        
+        var myForm = document.calculator;
+        var angka1=eval(myForm.angka1.value);
+        var angka2=eval(myForm.angka2.value);
+        var pil= myForm.option.value;
+        if (pil == "tambah") {
+        var jadi = angka1 + angka2;
+         }else if (pil == "kurang") 
+         {
+        var jadi = angka1 - angka2;
+         } else if (pil == "kali") 
+         {
+        var jadi = angka1 * angka2;
+         } else if (pil == "bagi") 
+         {
+        var jadi = angka1 / angka2;
+         }
+         myForm.Submit.value = jadi;
+         myForm.x.value = "";
+         myForm.y.value = "";
+        }
+        
+        
+        //-->
+        
+        </script>
+</html>
